@@ -47,13 +47,13 @@
       <img
         src="./assets/noakhali.png"
         class="max-w-sm   rounded-lg shadow-2xl" />
-        <!-- stat section copy -->
+        <!-- stat section start -->
       <div>
-        <div class=" ">
+        <div  class=" ">
             <a class=" "><div class="stats shadow ">
               <div class="stat flex items-center">
                 <img src="./assets/coin.png" alt="">
-                <div class="stat-value text-base">0 BDT</div>
+                <div id="stat-balance" class="stat-value text-base">0 BDT</div>
                 
               </div>
             </div></a>
@@ -68,10 +68,31 @@
             <form class="card-body">
               <div class="form-control">
                
-                <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required />
+                <input id="input-donation-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered" autocomplete="off" required />
               </div>
+<!-- modal using start  -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center items-center ">
+  <div class="modal-box">
+    <h2 class="text-3xl font-bold">Congrates!</h2>
+    <img class="pl-52 pt-8" src="./assets/coin.png" alt="">
+    <p class="py-4">You have Donated for Humankind</p>
+    <h3 class="text-xl font-bold">successfully</h3>
+    <div class="modal-action pr-40">
+      <form method="dialog ">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<!-- modal using end -->
+
               
-              <button class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
+   <button id="button-donate" onclick="my_modal_5.showModal()" class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
+
+
+
             </form>
           </div>
         <!-- form end -->
@@ -89,13 +110,13 @@
       <img
         src="./assets/feni.png"
         class="max-w-sm   rounded-lg shadow-2xl" />
-        <!-- stat section copy -->
+        <!-- stat section start -->
       <div>
         <div class=" ">
             <a class=" "><div class="stats shadow ">
               <div class="stat flex items-center">
                 <img src="./assets/coin.png" alt="">
-                <div class="stat-value text-base">600 BDT</div>
+                <div  class="stat-value text-base">600 BDT</div>
                 
               </div>
             </div></a>
@@ -110,10 +131,11 @@
             <form class="card-body">
               <div class="form-control">
                
-                <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required />
+                <input type="text" placeholder="Write Donation Amount" class="input input-bordered" autocomplete="off" required />
               </div>
+             
               
-              <button class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
+       <button id="button-donate" onclick= "my_modal_5.showModal()" class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
             </form>
           </div>
         <!-- form end -->
@@ -153,7 +175,7 @@
                 <form class="card-body">
                   <div class="form-control">
                    
-                    <input type="email" placeholder="Write Donation Amount" class="input input-bordered" required />
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered" autocomplete="off" required />
                   </div>
                   
                   <button class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
@@ -172,5 +194,7 @@
     <footer class="bg-zinc-100 mx-8 my-8">
 
     </footer>
+
+    <script src="./js/donate.js"></script>
 </body>
 </html>
