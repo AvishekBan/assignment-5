@@ -6,11 +6,21 @@
     <title>Donation</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .nav-sticky{
+             position: sticky;
+             top: 0;
+             overflow: hidden;
+             
+             
+             
+}
+</style>
 
 </head>
 <body>
     <!-- nav section -->
-    <header class="px-8 py-8  bg-zinc-100">
+    <header class="px-8 py-8  bg-zinc-100  nav-sticky">
         <div class=" flex justify-around items-center  mt-6 ">
             <div class="">
              
@@ -24,7 +34,7 @@
               <a class=" "><div class="stats shadow ">
                 <div class="stat flex items-center">
                   <img src="./assets/coin.png" alt="">
-                  <div class="stat-value text-base">5500 BDT</div>
+                  <div id="stat-balance1" class="stat-value text-base">5500 BDT</div>
                   
                 </div>
               </div></a>
@@ -135,7 +145,7 @@
               </div>
              
               
-       <button id="button-donate" onclick= "my_modal_5.showModal()" class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
+       <button  class="btn bg-lime-300 text-xl pl-20 pr-20  font-bold mr-2">Donate Now</button>
             </form>
           </div>
         <!-- form end -->
@@ -171,7 +181,7 @@
                 The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
             </p>
             <!-- form start -->
-            <div class="card  max-w-sm ">
+            <div class="card  max-w-sm">
                 <form class="card-body">
                   <div class="form-control">
                    

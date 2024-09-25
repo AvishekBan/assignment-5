@@ -24,6 +24,14 @@ document.getElementById('button-donate').addEventListener('click',function(event
         const newBalance   = donateNumber + balanceNumber;
         console.log(newBalance);
         document.getElementById('stat-balance').innerText = newBalance;
+
+        const balance1 =document.getElementById('stat-balance1').innerText;
+        console.log(balance1);
+         
+        const balanceNumber1 = parseFloat(balance1);
+        const newBalance1 =balanceNumber1 - donateNumber;
+        console.log(newBalance1);
+        document.getElementById('stat-balance1').innerText = newBalance1;
         
 // add to history
  const p= document.createElement('p')
