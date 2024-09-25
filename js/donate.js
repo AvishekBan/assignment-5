@@ -25,6 +25,13 @@ document.getElementById('button-donate').addEventListener('click',function(event
         console.log(newBalance);
         document.getElementById('stat-balance').innerText = newBalance;
         
+// add to history
+ const p= document.createElement('p')
+ p.innerText = `${donateNumber},Taka is Donated for famine-2024 at Noakhali, Bangladesh`;
+ console.log(p);
+    
+document.getElementById('transaction-container').appendChild(p);
+
 }
     
 })
