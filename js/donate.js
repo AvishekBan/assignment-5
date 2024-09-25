@@ -1,4 +1,4 @@
-//  console.log("check it")
+
 document.getElementById('button-donate').addEventListener('click',function(event){
     event.preventDefault();
    
@@ -34,7 +34,7 @@ document.getElementById('button-donate').addEventListener('click',function(event
         document.getElementById('stat-balance1').innerText = newBalance1;
         
 // add to history
- const p= document.createElement('p')
+ const p = document.createElement('p');
  p.innerText = `${donateNumber},Taka is Donated for famine-2024 at Noakhali, Bangladesh`;
  console.log(p);
     
